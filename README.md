@@ -23,13 +23,13 @@ Digital predistortion addresses this tradeoff by applying an approximate inverse
 
 '''
 Original signal
-      ->
+      ↓
 Digital predistorter
-      ->
+      ↓
 Predistorted signal
-      ->
+      ↓
 Nonlinear power amplifier
-      ->
+      ↓
 More linear transmitted signal
 '''
 
