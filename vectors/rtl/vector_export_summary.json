@@ -1,0 +1,17 @@
+{
+  "rtl_vector_root": "C:\\Users\\LETING\\sv_projects\\DPD\\vectors\\rtl",
+  "full_test": {
+    "directory": "C:\\Users\\LETING\\sv_projects\\DPD\\vectors\\rtl\\ofdm_nominal",
+    "sample_count": 36864,
+    "coefficient_count": 9
+  },
+  "short_test": {
+    "directory": "C:\\Users\\LETING\\sv_projects\\DPD\\vectors\\rtl\\ofdm_short",
+    "sample_count": 512,
+    "coefficient_count": 9
+  },
+  "vector_io_smoke": "C:\\Users\\LETING\\sv_projects\\DPD\\vectors\\rtl\\vector_io_smoke",
+  "roundtrip_check": "exact_integer_match",
+  "complex_report_arrays_preserved": true,
+  "multidimensional_trace_export": true
+}

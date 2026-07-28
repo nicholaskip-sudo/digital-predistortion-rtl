@@ -1,0 +1,17 @@
+{
+  "seed": 12345,
+  "qam_order": 64,
+  "symbol_count": 32,
+  "base_fft_size": 256,
+  "ifft_size": 1024,
+  "active_subcarriers": 192,
+  "oversampling": 4,
+  "cyclic_prefix_samples": 128,
+  "sample_count": 36864,
+  "sample_rate_hz": 245760000.0,
+  "normalization_mode": "rms",
+  "normalization_target": 0.2,
+  "rms_magnitude": 0.2,
+  "peak_magnitude": 0.6205159833054585,
+  "papr_db": 9.834459538208678
+}

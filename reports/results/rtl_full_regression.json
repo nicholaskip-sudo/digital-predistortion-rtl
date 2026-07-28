@@ -1,0 +1,11 @@
+{
+  "test_name": "ofdm_nominal",
+  "sample_count": 36864,
+  "cycle_count": 43085,
+  "latency_cycles": 1,
+  "accepted_samples_per_cycle": 0.8556110015086457,
+  "exact_integer_match": true,
+  "forbidden_warning_count": 0,
+  "waveform_dump_enabled": false,
+  "log_path": "C:\\Users\\LETING\\sv_projects\\DPD\\reports\\logs\\dpd_core_full.log"
+}

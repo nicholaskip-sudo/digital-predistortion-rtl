@@ -1,0 +1,19 @@
+{
+  "test_name": "dpd_m13_stress_uvm_test",
+  "seed": 13013,
+  "accepted_input_count": 2048,
+  "checked_output_count": 2047,
+  "dropped_expected_on_reset": 1,
+  "mismatch_count": 0,
+  "unexpected_output_count": 0,
+  "reset_count": 1,
+  "identity_input_count": 1536,
+  "zero_input_count": 512,
+  "input_idle_cycle_count": 5073,
+  "output_stall_cycle_count": 885,
+  "maximum_output_stall_cycles": 9,
+  "coefficient_update_count": 3,
+  "waveform_dump_enabled": false,
+  "log_path": "C:\\Users\\LETING\\sv_projects\\DPD\\reports\\logs\\dpd_uvm_stress_seed_13013.log",
+  "waveform_path": null
+}

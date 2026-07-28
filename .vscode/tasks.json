@@ -1,0 +1,68 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Python: Run unit tests",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["-m", "pytest"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": {"kind": "test", "isDefault": true},
+            "problemMatcher": []
+        },
+        {
+            "label": "DSim: Run UVM short baseline",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["simulation/run_uvm_short.py"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "DSim: Run UVM full coverage",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["simulation/run_uvm_full.py"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "DSim: Run UVM randomized stress",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["simulation/run_uvm_stress.py"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "DSim: Run UVM stress seed matrix",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["simulation/run_uvm_stress_matrix.py"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "DSim: Run negative protocol tests",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["simulation/run_protocol_negative.py"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Milestone 13: Run all checks",
+            "type": "process",
+            "command": "${command:python.interpreterPath}",
+            "args": ["simulation/run_milestone_13.py"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": "test",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "model": "wiener_rapp_ampm",
+  "sample_count": 36864,
+  "memory_taps": [
+    {
+      "real": 1.0,
+      "imag": 0.0
+    },
+    {
+      "real": 0.1,
+      "imag": -0.04
+    },
+    {
+      "real": -0.035,
+      "imag": 0.02
+    }
+  ],
+  "configured_small_signal_gain": 2.0,
+  "configured_saturation_amplitude": 0.6,
+  "configured_ampm_max_degrees": 18.0,
+  "best_fit_gain_real": 1.845408358526294,
+  "best_fit_gain_imag": 0.17853719473817664,
+  "best_fit_gain_magnitude": 1.8540246868970456,
+  "time_domain_nmse_db": -16.718989387498134,
+  "time_domain_evm_percent": 14.58984004741609,
+  "ofdm_evm_after_one_tap_equalization_percent": 11.64616180188105,
+  "input_rms_magnitude": 0.2,
+  "output_rms_magnitude": 0.37473069671110687,
+  "input_peak_magnitude": 0.6205159833054585,
+  "output_peak_magnitude": 0.5977511063814099,
+  "input_papr_db": 9.834459538208678,
+  "output_papr_db": 4.056022361895176,
+  "occupied_bandwidth_hz": 46080000.0,
+  "input_acpr_db": -20.525607636046843,
+  "output_acpr_db": -17.940149421939655
+}

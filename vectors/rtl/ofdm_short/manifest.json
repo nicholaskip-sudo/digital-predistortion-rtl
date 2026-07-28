@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "test_name": "ofdm_short",
+  "sample_count": 512,
+  "coefficient_count": 9,
+  "sample_width": 16,
+  "coefficient_width": 24,
+  "hex_encoding": "fixed_width_twos_complement_uppercase",
+  "line_format": "one_word_per_line",
+  "expected_latency_cycles": null,
+  "metadata": {
+    "project_version": "0.2.0",
+    "algorithm": "memory_polynomial",
+    "memory_depth": 3,
+    "polynomial_orders": [
+      1,
+      3,
+      5
+    ],
+    "coefficient_order": [
+      {
+        "index": 0,
+        "memory_index": 0,
+        "polynomial_order": 1,
+        "label": "x[n-0]"
+      },
+      {
+        "index": 1,
+        "memory_index": 0,
+        "polynomial_order": 3,
+        "label": "x[n-0]*|x[n-0]|^2"
+      },
+      {
+        "index": 2,
+        "memory_index": 0,
+        "polynomial_order": 5,
+        "label": "x[n-0]*|x[n-0]|^4"
+      },
+      {
+        "index": 3,
+        "memory_index": 1,
+        "polynomial_order": 1,
+        "label": "x[n-1]"
+      },
+      {
+        "index": 4,
+        "memory_index": 1,
+        "polynomial_order": 3,
+        "label": "x[n-1]*|x[n-1]|^2"
+      },
+      {
+        "index": 5,
+        "memory_index": 1,
+        "polynomial_order": 5,
+        "label": "x[n-1]*|x[n-1]|^4"
+      },
+      {
+        "index": 6,
+        "memory_index": 2,
+        "polynomial_order": 1,
+        "label": "x[n-2]"
+      },
+      {
+        "index": 7,
+        "memory_index": 2,
+        "polynomial_order": 3,
+        "label": "x[n-2]*|x[n-2]|^2"
+      },
+      {
+        "index": 8,
+        "memory_index": 2,
+        "polynomial_order": 5,
+        "label": "x[n-2]*|x[n-2]|^4"
+      }
+    ],
+    "sample_fractional_bits": 15,
+    "coefficient_fractional_bits": 16,
+    "rounding_mode": "nearest_ties_away_from_zero",
+    "output_overflow": "saturate"
+  },
+  "files": {
+    "input_i": {
+      "filename": "input_i.hex",
+      "width": 16,
+      "word_count": 512,
+      "sha256": "e32e99717b29ac087d94cf3ccd6d1b4b0d57298b8f5382b34333c40832e041b8"
+    },
+    "input_q": {
+      "filename": "input_q.hex",
+      "width": 16,
+      "word_count": 512,
+      "sha256": "defa3ee6c04ff6149854afe9658520db409b3c539b705858f7342a575abae37e"
+    },
+    "expected_i": {
+      "filename": "expected_i.hex",
+      "width": 16,
+      "word_count": 512,
+      "sha256": "faedb56c453d3d4b223b6a33f8e94c7083e363ea820d1b9b9d7f00b48ae6c3c6"
+    },
+    "expected_q": {
+      "filename": "expected_q.hex",
+      "width": 16,
+      "word_count": 512,
+      "sha256": "e247f3748ce044e5ae85dea434126bbf4aea1520f2b69a0896a228f3812ff3ce"
+    },
+    "coefficient_i": {
+      "filename": "coefficients_i.hex",
+      "width": 24,
+      "word_count": 9,
+      "sha256": "2673073ea581b4e690a211efc0dd0a151d60e45aaae32554bb2e0ec4e922baf3"
+    },
+    "coefficient_q": {
+      "filename": "coefficients_q.hex",
+      "width": 24,
+      "word_count": 9,
+      "sha256": "46a127d7629b5b70bca57fac247231b107d6f09205323d6a5b7899cb77df7b95"
+    },
+    "samples_debug": {
+      "filename": "samples_debug.csv",
+      "sha256": "eabf5a034ce3022de0bf0e04fd8cf9c4c7eb1fbd9870d5438c5bba7df596aff1"
+    },
+    "coefficients_csv": {
+      "filename": "coefficients.csv",
+      "sha256": "44833c44716314c212f2411cd72f10ae46f753d139f397e2bd2f76242f3c00e2"
+    },
+    "internal_trace": {
+      "filename": "internal_trace.csv",
+      "sha256": "66e49f42b70e9ce95aa6e5337d5a16dad10a4134bf54fa511540f7382ebc89b4"
+    }
+  }
+}

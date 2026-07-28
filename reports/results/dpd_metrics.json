@@ -1,0 +1,116 @@
+{
+  "method": "indirect_learning_architecture",
+  "target_linear_gain": 1.5,
+  "sample_count": 36864,
+  "coefficient_count": 9,
+  "accepted_iterations": 1,
+  "evaluated_candidates": 2,
+  "training_stop_reason": "candidate_failed_validation_guard",
+  "training_split_index": 27648,
+  "predistorter_rms_magnitude": 0.17029858937808987,
+  "predistorter_peak_magnitude": 1.4142135623730951,
+  "predistorter_component_saturation_count": 66,
+  "predistorter_component_saturation_fraction": 0.0017903645833333333,
+  "dpd_pa_best_fit_gain_real": 1.4844964303013457,
+  "dpd_pa_best_fit_gain_imag": 0.00023936889305707824,
+  "original_pa_best_fit_nmse_db": -16.718989387498134,
+  "same_gain_backoff_target_nmse_db": -19.443631812156962,
+  "dpd_pa_target_nmse_db": -25.183563992753356,
+  "dpd_pa_best_fit_nmse_db": -25.249167513267174,
+  "nmse_improvement_vs_original_pa_db": 8.53017812576904,
+  "nmse_improvement_vs_same_gain_backoff_db": 5.739932180596394,
+  "original_pa_ofdm_evm_percent": 11.64616180188105,
+  "same_gain_backoff_ofdm_evm_percent": 6.673356999864601,
+  "dpd_pa_ofdm_evm_percent": 3.8843284705504857,
+  "original_pa_acpr_db": -17.940149421939655,
+  "same_gain_backoff_acpr_db": -19.468766701792347,
+  "dpd_pa_acpr_db": -19.92978977409796,
+  "original_pa_output_papr_db": 4.056022361895176,
+  "same_gain_backoff_output_papr_db": 5.797462788265122,
+  "dpd_pa_output_papr_db": 6.097404313662118,
+  "training_history": [
+    {
+      "iteration": 1,
+      "accepted": true,
+      "training_nmse_db": -25.30627808555108,
+      "validation_nmse_db": -24.83246954587763,
+      "full_waveform_nmse_db": -25.183563992753356,
+      "normalized_condition_number": 94.79418496405121,
+      "saturation_count": 66
+    },
+    {
+      "iteration": 2,
+      "accepted": false,
+      "training_nmse_db": -21.56732088512346,
+      "validation_nmse_db": -21.237342598515863,
+      "full_waveform_nmse_db": -21.48289962548362,
+      "normalized_condition_number": 75.59472393299707,
+      "saturation_count": 188
+    }
+  ],
+  "coefficients": [
+    {
+      "index": 0,
+      "real": 0.8329427112959268,
+      "imag": -0.03463744130860763,
+      "magnitude": 0.8336625892058591,
+      "phase_degrees": -2.3812399157534685
+    },
+    {
+      "index": 1,
+      "real": -3.3908773495190716,
+      "imag": 0.3008558974782976,
+      "magnitude": 3.404197918824485,
+      "phase_degrees": 174.92970369677553
+    },
+    {
+      "index": 2,
+      "real": 31.38207287738343,
+      "imag": -8.890096242266317,
+      "magnitude": 32.616994179080365,
+      "phase_degrees": -15.81667389331335
+    },
+    {
+      "index": 3,
+      "real": -0.05989723014935557,
+      "imag": 0.026992068878414797,
+      "magnitude": 0.06569817320064507,
+      "phase_degrees": 155.7417828073395
+    },
+    {
+      "index": 4,
+      "real": -0.457721869142137,
+      "imag": 0.12810183617266027,
+      "magnitude": 0.47530978311179195,
+      "phase_degrees": 164.36475165596696
+    },
+    {
+      "index": 5,
+      "real": 2.235608083030452,
+      "imag": 0.0041854634060759285,
+      "magnitude": 2.235612000999953,
+      "phase_degrees": 0.10726795546732334
+    },
+    {
+      "index": 6,
+      "real": 0.0329517216623316,
+      "imag": -0.016256280664284587,
+      "magnitude": 0.0367434704613999,
+      "phase_degrees": -26.258796569586192
+    },
+    {
+      "index": 7,
+      "real": -0.2133363879325811,
+      "imag": 0.05059378077723283,
+      "magnitude": 0.2192536090226463,
+      "phase_degrees": 166.65849721884908
+    },
+    {
+      "index": 8,
+      "real": 1.7677781552991378,
+      "imag": -0.7172127541774321,
+      "magnitude": 1.907729996909311,
+      "phase_degrees": -22.08309467086036
+    }
+  ]
+}

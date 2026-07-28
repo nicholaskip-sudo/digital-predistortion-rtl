@@ -1,0 +1,21 @@
+method: indirect_learning_architecture
+
+target:
+  linear_gain: 1.5
+
+least_squares:
+  ridge_regularization: 0.0001
+  ignore_initial_samples: 8
+  training_fraction: 0.75
+
+iteration:
+  maximum_iterations: 4
+  minimum_validation_improvement_db: 0.05
+
+output_limit:
+  mode: component_saturation
+  minimum: -1.0
+  maximum: 0.999969482421875
+
+report:
+  maximum_constellation_points: 6000

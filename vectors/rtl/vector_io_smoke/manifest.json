@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "purpose": "DSim readmemh signed two's-complement compatibility",
+  "signed16_values": [
+    0,
+    1,
+    -1,
+    32767,
+    -32768,
+    4660,
+    -4660,
+    123
+  ],
+  "signed24_values": [
+    0,
+    1,
+    -1,
+    8388607,
+    -8388608,
+    1193046,
+    -1193046,
+    65536
+  ],
+  "files": {
+    "signed16": {
+      "filename": "signed16.hex",
+      "width": 16,
+      "word_count": 8,
+      "sha256": "55abc9b0e094ebd0b9b3c216a50a999ad1a4c5a8e097312699ac1fe16d94f2fe"
+    },
+    "signed24": {
+      "filename": "signed24.hex",
+      "width": 24,
+      "word_count": 8,
+      "sha256": "13b1a278743513304a10a4d8dde1d922fe51f2583971208ed5e83f6cb2adc3bb"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+rounding:
+  mode: nearest_ties_away_from_zero
+
+overflow:
+  basis: saturate
+  coefficient: saturate
+  accumulator: error
+  output: saturate
+
+formats:
+  sample:
+    width: 16
+    fractional_bits: 15
+    signed: true
+
+  magnitude_squared:
+    width: 32
+    fractional_bits: 30
+    signed: false
+
+  magnitude_fourth:
+    width: 64
+    fractional_bits: 60
+    signed: false
+
+  basis:
+    width: 24
+    fractional_bits: 20
+    signed: true
+
+  coefficient:
+    width: 24
+    fractional_bits: 16
+    signed: true
+
+  real_product:
+    width: 48
+    fractional_bits: 36
+    signed: true
+
+  complex_term:
+    width: 49
+    fractional_bits: 36
+    signed: true
+
+  accumulator:
+    width: 54
+    fractional_bits: 36
+    signed: true
+
+  output:
+    width: 16
+    fractional_bits: 15
+    signed: true

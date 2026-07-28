@@ -1,0 +1,127 @@
+{
+  "project_version": "0.2.0",
+  "rounding_mode": "nearest_ties_away_from_zero",
+  "overflow_policy": {
+    "basis": "saturate",
+    "coefficient": "saturate",
+    "accumulator": "error",
+    "output": "saturate"
+  },
+  "formats": {
+    "sample": {
+      "width": 16,
+      "fractional_bits": 15,
+      "integer_bits": 1,
+      "signed": true,
+      "minimum_real": -1.0,
+      "maximum_real": 0.999969482421875
+    },
+    "magnitude_squared": {
+      "width": 32,
+      "fractional_bits": 30,
+      "integer_bits": 2,
+      "signed": false,
+      "minimum_real": 0.0,
+      "maximum_real": 3.9999999990686774
+    },
+    "magnitude_fourth": {
+      "width": 64,
+      "fractional_bits": 60,
+      "integer_bits": 4,
+      "signed": false,
+      "minimum_real": 0.0,
+      "maximum_real": 16.0
+    },
+    "basis": {
+      "width": 24,
+      "fractional_bits": 20,
+      "integer_bits": 4,
+      "signed": true,
+      "minimum_real": -8.0,
+      "maximum_real": 7.999999046325684
+    },
+    "coefficient": {
+      "width": 24,
+      "fractional_bits": 16,
+      "integer_bits": 8,
+      "signed": true,
+      "minimum_real": -128.0,
+      "maximum_real": 127.99998474121094
+    },
+    "real_product": {
+      "width": 48,
+      "fractional_bits": 36,
+      "integer_bits": 12,
+      "signed": true,
+      "minimum_real": -2048.0,
+      "maximum_real": 2047.9999999999854
+    },
+    "complex_term": {
+      "width": 49,
+      "fractional_bits": 36,
+      "integer_bits": 13,
+      "signed": true,
+      "minimum_real": -4096.0,
+      "maximum_real": 4095.9999999999854
+    },
+    "accumulator": {
+      "width": 54,
+      "fractional_bits": 36,
+      "integer_bits": 18,
+      "signed": true,
+      "minimum_real": -131072.0,
+      "maximum_real": 131071.99999999999
+    },
+    "output": {
+      "width": 16,
+      "fractional_bits": 15,
+      "integer_bits": 1,
+      "signed": true,
+      "minimum_real": -1.0,
+      "maximum_real": 0.999969482421875
+    }
+  },
+  "shifts": {
+    "order1_basis_left_shift": 5,
+    "order3_basis_right_shift": 25,
+    "order5_basis_right_shift": 55,
+    "output_right_shift": 21
+  },
+  "coefficient_analysis": {
+    "count": 9,
+    "maximum_floating_component": 31.38207287738343,
+    "maximum_floating_magnitude": 32.61699417908036,
+    "saturation_count": 0,
+    "maximum_absolute_complex_error": 9.214089302256823e-06,
+    "rms_complex_error": 6.559638197647858e-06
+  },
+  "basis_empirical_ranges": {
+    "1": {
+      "maximum_complex_magnitude": 0.6205159833054585,
+      "maximum_absolute_real": 0.6027119906883983,
+      "maximum_absolute_imag": 0.5410339137920575
+    },
+    "3": {
+      "maximum_complex_magnitude": 0.23892352728934454,
+      "maximum_absolute_real": 0.22146326102636404,
+      "maximum_absolute_imag": 0.18958489198725886
+    },
+    "5": {
+      "maximum_complex_magnitude": 0.09199513538442003,
+      "maximum_absolute_real": 0.08265944497228697,
+      "maximum_absolute_imag": 0.07299778302739945
+    }
+  },
+  "basis_theoretical_component_bounds": {
+    "1": 1.0,
+    "3": 2.0,
+    "5": 4.0
+  },
+  "accumulator_analysis": {
+    "worst_case_component_bound": 9216.0,
+    "required_signed_integer_bits_including_sign": 15,
+    "selected_integer_bits_including_sign": 18,
+    "selected_width": 54,
+    "selected_fractional_bits": 36
+  }
+}

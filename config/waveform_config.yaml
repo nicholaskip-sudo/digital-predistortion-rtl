@@ -1,0 +1,18 @@
+seed: 12345
+
+qam:
+  order: 64
+
+ofdm:
+  symbol_count: 32
+  base_fft_size: 256
+  active_subcarriers: 192
+  cyclic_prefix_length: 32
+  oversampling: 4
+
+normalization:
+  mode: rms
+  target: 0.20
+
+report:
+  sample_rate_hz: 245760000.0

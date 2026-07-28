@@ -1,0 +1,68 @@
+﻿# Python environments
+.venv/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Altair DSim generated files
+dsim_work/
+metrics.db
+*.so
+*.dll
+*.o
+*.obj
+
+# Logs and simulation waveforms
+*.log
+*.vcd
+*.fst
+*.wlf
+*.vpd
+*.shm
+
+reports/logs/
+reports/waves/
+reports/coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*~
+Thumbs.db
+.DS_Store
+
+# IDE configuration
+.vscode/*
+!.vscode/tasks.json
+.idea/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets and local configuration
+.env
+.env.*
+*.license
+*license*.json
+dsim-license.json
+
+# Large generated debug trace
+vectors/rtl/ofdm_nominal/internal_trace.csv

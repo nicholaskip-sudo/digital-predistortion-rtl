@@ -1,0 +1,20 @@
+model: wiener_rapp_ampm
+
+memory:
+  input_taps:
+    - real: 1.0
+      imag: 0.0
+    - real: 0.10
+      imag: -0.04
+    - real: -0.035
+      imag: 0.020
+
+nonlinearity:
+  small_signal_gain: 2.0
+  saturation_amplitude: 0.60
+  rapp_smoothness: 2.5
+  ampm_max_degrees: 18.0
+  ampm_transition_amplitude: 0.34
+
+report:
+  characterization_points: 600

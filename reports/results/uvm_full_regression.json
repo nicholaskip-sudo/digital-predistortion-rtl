@@ -1,0 +1,28 @@
+{
+  "test_name": "dpd_full_uvm_test",
+  "sample_count": 36864,
+  "mismatch_count": 0,
+  "input_transfer_count": 36864,
+  "output_transfer_count": 36864,
+  "stream_coverage_percent": 96.97,
+  "stall_coverage_percent": 50.0,
+  "saturated_output_count": 66,
+  "max_output_stall_cycles": 2,
+  "mandatory_coverage": {
+    "input_quadrants": 4,
+    "output_quadrants": 4,
+    "input_magnitude": 4,
+    "output_magnitude": 4,
+    "protocol_states": 6,
+    "ready_states": 2,
+    "saturation_states": 2
+  },
+  "uvm_warning_count": 0,
+  "uvm_error_count": 0,
+  "uvm_fatal_count": 0,
+  "waveform_dump_enabled": false,
+  "coverage_database": "C:\\Users\\LETING\\sv_projects\\DPD\\reports\\coverage\\uvm_full\\metrics.db",
+  "coverage_html_generated": true,
+  "coverage_html_directory": "C:\\Users\\LETING\\sv_projects\\DPD\\reports\\coverage\\uvm_full\\html",
+  "log_path": "C:\\Users\\LETING\\sv_projects\\DPD\\reports\\logs\\dpd_uvm_full.log"
+}
