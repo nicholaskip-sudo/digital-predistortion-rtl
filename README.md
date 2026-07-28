@@ -4,6 +4,7 @@ A Python-to-SystemVerilog implementation of a fixed-point memory-polynomial digi
 
 > **Current scope:** algorithm development, fixed-point modeling, bit-accurate RTL, and verification are complete. Synthesis and hardware deployment are not included yet.
 
+
 ## Why this project exists
 
 RF power amplifiers are most power-efficient when operated close to saturation. Unfortunately, this is also where they become nonlinear.
@@ -108,6 +109,7 @@ Output format:        signed Q1.15
 
 The high PAPR makes OFDM a useful stress case for PA nonlinearity and predistortion.
 
+
 ## Power-amplifier model
 
 The behavioral PA combines:
@@ -180,6 +182,7 @@ Measured fixed-point agreement:
 | Maximum coefficient error | 9.21e-6 |
 | Fixed vs floating DPD NMSE | -77.85 dB |
 | Fixed vs floating RMS error | 2.18e-5 |
+
 
 ## RTL implementation
 
@@ -284,34 +287,42 @@ The testbench intentionally violates both streaming stability rules and confirms
 
 These are expected-failure tests. They pass only when the correct assertion fires.
 
----
-
 ## Repository structure
 
 digital-predistortion-rtl/
 ├── python/
-│   ├── dpd/                 # Reusable DSP and fixed-point models
-│   ├── scripts/             # Analysis and vector-generation workflows
-│   └── tests/               # Python unit tests
+│   ├── dpd/
+│   ├── scripts/
+│   └── tests/
 ├── rtl/
-│   ├── dpd_pkg.sv           # Shared numerical specification
-│   └── dpd_core.sv          # Bit-accurate DPD RTL
 ├── verification/
-│   ├── uvm/                 # Golden-vector UVM environment
-│   ├── uvm_stress/          # Randomized reset and coefficient tests
-│   ├── negative/            # Expected-failure protocol tests
-│   └── *.sv                 # Direct RTL and specification testbenches
+│   ├── uvm/
+│   ├── uvm_stress/
+│   └── negative/
 ├── simulation/
-│   ├── filelist_*.f         # DSim compilation file lists
-│   └── run_*.py             # Regression runners
 ├── vectors/
-│   └── rtl/                 # Python-generated RTL vectors
 ├── reports/
-│   ├── results/             # Small regression summaries
-│   └── plots/               # Selected result plots
-├── docs/                    # Architecture and verification documents
+├── docs/
 ├── pyproject.toml
 └── README.md
+
+### What each folder contains
+
+| Folder | Purpose |
+|---|---|
+| 'python/dpd/' | Core Python models for OFDM, the PA, DPD training, fixed-point arithmetic, and vector export |
+| 'python/scripts/' | Executable workflows for analysis, reports, plots, and golden-vector generation |
+| 'python/tests/' | Pytest unit tests for the Python implementation |
+| 'rtl/' | Final SystemVerilog DPD hardware implementation |
+| 'verification/uvm/' | Main UVM environment for golden-vector regression |
+| 'verification/uvm_stress/' | Randomized backpressure, reset, and coefficient-update tests |
+| 'verification/negative/' | Expected-failure tests that confirm protocol assertions work |
+| 'simulation/' | DSim file lists and Python regression runners |
+| 'vectors/' | Python-generated input, coefficient, and expected-output vectors |
+| 'reports/' | Selected regression summaries and plots |
+| 'docs/' | Architecture, verification, and portfolio documentation |
+
+---
 
 ## Running the project
 
@@ -339,16 +350,13 @@ python .\simulation\run_dpd_core_full.py
 
 python .\simulation\run_uvm_full.py
 
-
 ### Run randomized stress and negative tests
 
 python .\simulation\run_milestone_13.py
 
-
 Expected final marker:
 
 MILESTONE_13_STRESS_REGRESSION_PASS
-
 
 ## Engineering skills demonstrated
 
@@ -377,7 +385,6 @@ MILESTONE_13_STRESS_REGRESSION_PASS
 
 These limitations define the current project boundary and avoid overstating the implementation status.
 
-
 ## Future extensions
 
 Possible future work includes:
@@ -391,9 +398,7 @@ Possible future work includes:
 - FPGA implementation
 - Synthesis and timing analysis
 
-
 ## Tools
-
 
 Python
 NumPy
