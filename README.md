@@ -57,7 +57,7 @@ The completed project demonstrates all five.
 
 The signal-processing chain is:
 
-'''text
+'''
 64-QAM OFDM
     ↓
 Digital predistorter
