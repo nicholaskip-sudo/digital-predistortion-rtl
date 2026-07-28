@@ -31,7 +31,7 @@ Predistorted signal
 Nonlinear power amplifier
       >
 More linear transmitted signal
-'''
+
 
 This project was created to explore the complete engineering path from the DSP algorithm to a cycle-accurate, bit-accurate RTL implementation and a structured verification environment.
 
