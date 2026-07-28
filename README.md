@@ -21,15 +21,15 @@ Operating the PA farther below saturation improves linearity, but wastes availab
 
 Digital predistortion addresses this tradeoff by applying an approximate inverse nonlinear response before the PA. The signal is intentionally distorted first so that the predistorter and amplifier distortions approximately cancel.
 
-'''
+
 Original signal
-      ↓
+      >
 Digital predistorter
-      ↓
+      >
 Predistorted signal
-      ↓
+      >
 Nonlinear power amplifier
-      ↓
+      >
 More linear transmitted signal
 '''
 
