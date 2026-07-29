@@ -96,7 +96,7 @@ There are **3 memory taps . 3 nonlinear orders = 9 complex coefficients**. Each 
 
 The implemented model contains:
 
-'''text
+'''
 Memory taps:          3
 Nonlinear orders:     1, 3, 5
 Complex coefficients: 9
@@ -150,7 +150,7 @@ The uncorrected PA produced:
 
 The coefficients are trained in Python using an indirect learning architecture.
 
-'''text
+'''
 Known PA input and output
         ↓
 Construct memory-polynomial basis matrix
@@ -225,7 +225,7 @@ Key properties:
 
 Full direct RTL regression:
 
-'''text
+'''
 Samples checked:             36,864
 Cycle count:                 43,085
 Latency:                     1 cycle
@@ -242,7 +242,7 @@ The project uses several verification layers.
 
 ### Python unit tests
 
-'''text
+'''
 116 passing tests
 '''
 
@@ -274,7 +274,7 @@ The UVM environment contains:
 
 The full UVM test produced:
 
-'''text
+'''
 Input transfers:        36,864
 Output transfers:       36,864
 Mismatches:             0
@@ -302,7 +302,7 @@ Maximum output stall:   2 cycles
 
 Three deterministic seeds exercised random complex inputs, random input gaps, random output backpressure, reset while an output was stalled, and identity → zero → identity coefficient updates.
 
-'''text
+'''
 Accepted inputs:          6,144
 Checked outputs:          6,141
 Reset-flushed outputs:        3
@@ -356,37 +356,37 @@ The repository is organized by responsibility rather than by milestone:
 
 ### Activate the Python environment
 
-'''powershell
+'''
 .\.venv\Scripts\Activate.ps1
 '''
 
 ### Run Python tests
 
-'''powershell
+'''
 python -m pytest
 '''
 
 ### Run the full direct RTL regression
 
-'''powershell
+'''
 python .\simulation\run_dpd_core_full.py
 '''
 
 ### Run the full UVM regression
 
-'''powershell
+'''
 python .\simulation\run_uvm_full.py
 '''
 
 ### Run randomized stress and negative tests
 
-'''powershell
+'''
 python .\simulation\run_milestone_13.py
 '''
 
 Expected final marker:
 
-'''text
+'''
 MILESTONE_13_STRESS_REGRESSION_PASS
 '''
 
